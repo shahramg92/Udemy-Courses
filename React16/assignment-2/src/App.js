@@ -8,7 +8,7 @@ class App extends Component {
   }
 
   inputChangeHandler = (event) => {
-    th.setState({userInput: event.target.value});
+    this.setState({userInput: event.target.value});
   }
 
 

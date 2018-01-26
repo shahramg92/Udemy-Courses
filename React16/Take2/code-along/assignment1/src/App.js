@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+impo './App.css';
 import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
 

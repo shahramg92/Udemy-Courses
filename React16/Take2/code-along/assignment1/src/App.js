@@ -10,6 +10,7 @@ class App extends Component {
         <p>Assignment 1</p>
         <UserInput />
         <UserOutput />
+        <UserOutput />
       </div>
     );
   }

@@ -4,9 +4,9 @@ const userOutput = () => {
   return (
     <div>
       <p>Hi</p>
-      <p>Hi</p>
+      <p>I love react</p>
     </div>
-)
-}
+  );
+};
 
 export default userOutput;

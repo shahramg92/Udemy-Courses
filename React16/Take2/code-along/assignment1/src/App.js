@@ -6,10 +6,18 @@ import UserOutput from './UserOutput/UserOutput';
 class App extends Component {
   state = {
     username: [
-      {name: 'Shahram'}
+      {name: 'Shahram'},
+      {name: 'Sofia'}
     ]
   }
 
+changeNameHandler = () => {
+  this.setState({
+    username: [
+      {name: 'Cheyenne'}
+    ]
+  })
+}
 
   render() {
     return (
@@ -17,7 +25,8 @@ class App extends Component {
         <p>Assignment 1</p>
         <UserInput />
         <UserOutput userName={this.state.username[0].name}/>
-        <UserOutput />
+        <UserOutput
+        clicked={this.changeNameHandler}/>
       </div>
     );
   }

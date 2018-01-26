@@ -4,7 +4,7 @@ const userOutput = (props) => {
   return (
     <div>
       <p>Hi, my name is {props.userName}</p>
-      <p>I love react</p>
+      <p onClick={props.clicked} >I love react</p>
     </div>
   );
 };

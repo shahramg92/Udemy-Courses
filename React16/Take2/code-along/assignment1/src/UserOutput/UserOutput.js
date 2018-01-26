@@ -1,10 +1,11 @@
 import React from 'react';
+import './UserOutput.css';
 
 const userOutput = (props) => {
   return (
-    <div>
+    <div className="UserOutput">
       <p>Hi, my name is {props.userName}</p>
-      <p onClick={props.clicked} >I love react</p>
+      <p>I love react</p>
     </div>
   );
 };

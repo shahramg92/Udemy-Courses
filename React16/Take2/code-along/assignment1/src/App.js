@@ -8,7 +8,7 @@ class App extends Component {
     username: 'Shahram'
   }
 
-urnameChangedHandler = (event) => {
+usernameChangedHandler = (event) => {
   this.setState({username: event.target.value})}
 
   render() {

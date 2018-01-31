@@ -1,6 +1,6 @@
 import React from 'react';
 
-const char = () => {
+const char = (props) => {
   const style = {
     display: 'inline-block',
     padding: '16px',
@@ -10,8 +10,8 @@ const char = () => {
   };
 
   return (
-    <div style={style}>
-
+    <div style={style} onClick={props.clicked}>
+      {props.character}
     </div>
   )
 }

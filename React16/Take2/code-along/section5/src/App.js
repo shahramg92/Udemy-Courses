@@ -46,7 +46,8 @@ class App extends Component {
 
   render () {
     const style = {
-      backgroundColor: 'white',
+      backgroundColor: 'green',
+      color: 'white',
       font: 'inherit',
       border: '1px solid blue',
       padding: '8px',
@@ -61,14 +62,18 @@ class App extends Component {
           {this.state.persons.map((person, index) => {
             return <Person
               click={() => this.deletePersonHandler(index)}
-              name={person.name} 
+              name={person.name}
               age={person.age}
               key={person.id}
               changed={(event) => this.nameChangedHandler(event, person.id)} />
           })}
         </div>
       );
+      style.backgroundColor = 'red';
     }
+
+    let classes = ['red', 'bold'].join(' ');
+    // this will turn the array of strings into one string "red bold"
 
     return (
       <div className="App">

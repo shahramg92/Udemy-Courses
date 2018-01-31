@@ -13,7 +13,7 @@ class App extends Component {
 
   render() {
     return (
-      <div clasName="App">
+      <div className="App">
         <input
           type="text"
           onChange={this.inputChangedHandler}

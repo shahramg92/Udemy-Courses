@@ -6,3 +6,13 @@
     padding: 16px;
     text-align: center;
 }
+
+
+
+
+/* one way to write media queries below
+@media (min-width: 500px) {
+  .Person {
+    width: 450px;
+  }
+} */

@@ -3,7 +3,7 @@ import classes from './App.css';
 import Person from './Person/Person';
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 
-class Ap extends Component {
+class App extends Component {
   state = {
     persons: [
       { id: 'asfa1', name: 'Max', age: 28 },

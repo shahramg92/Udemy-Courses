@@ -30,25 +30,25 @@ class App extends Component {
     const persons = [...this.state.persons];
     persons[personIndex] = person;
 
-    this.setState( { persons: persons } );
+    this.setState({persons: persons});
   }
 
-  deletePersonHandler = ( personIndex ) => {
+  deletePersonHandler = (personIndex) => {
     // const persons = this.state.persons.slice();
     const persons = [...this.state.persons];
     persons.splice( personIndex, 1 );
-    this.setState( { persons: persons } );
+    this.setState({persons: persons});
   }
 
   togglePersonsHandler = () => {
     const doesShow = this.state.showPersons;
-    this.setState( { showPersons: !doesShow } );
+    this.setState({showPersons: !doesShow});
   }
 
   render () {
     let persons = null;
 
-    if ( this.state.showPersons ) {
+    if (this.state.showPersons) {
       persons = <Persons
             persons={this.state.persons}
             clicked={this.deletePersonHandler}

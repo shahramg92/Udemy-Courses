@@ -8,14 +8,6 @@ class Person extends Component {
     console.log('[Persons.js] Inside Constructor', props);
   }
 
-  componentWillMount() {
-    console.log('[Persons.js] Inside componentWillMount()');
-  }
-
-  componentDidMount() {
-    console.log('[Persons.js] Inside componentDidMount');
-  }
-
   render () {
     console.log('[Persons.js] Inside render');
     return (

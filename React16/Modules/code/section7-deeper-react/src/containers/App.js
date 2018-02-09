@@ -13,7 +13,7 @@ class App extends Component {
         { id: 'vasdf1', name: 'Manu', age: 29 },
         { id: 'asdf11', name: 'Stephanie', age: 26 }
       ],
-      otherState: 'some other value',
+      othertate: 'some other value',
       showPersons: false
     }
   }
@@ -24,6 +24,19 @@ class App extends Component {
 
   componentDidMount() {
     console.log('[App.js] Inside componentDidMount');
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log('[Update App.js] Inside shouldComponentUpdate', nextProps, nextState);
+    return true;
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    console.log('[UPDATE App.js] Inside componentWillUpdate', nextProps, nextState);
+  }
+
+  componentDidUpdate () {
+    console.log( '[UPDATE App.js] Inside componentDidUpdate');
   }
 
   // state = {

@@ -13,7 +13,7 @@ class App extends Component {
         { id: 'vasdf1', name: 'Manu', age: 29 },
         { id: 'asdf11', name: 'Stephanie', age: 26 }
       ],
-      othertate: 'some other value',
+      otherState: 'some other value',
       showPersons: false
     }
   }

@@ -41,9 +41,9 @@ class Blog extends Component {
         let posts = <p style={{textAlign: 'center'}}>Something went wrong!</p>;
         if (!this.state.error) {
             posts = this.state.posts.map(post => {
-                return <Post 
-                    key={post.id} 
-                    title={post.title} 
+                return <Post
+                    key={post.id}
+                    title={post.title}
                     author={post.author}
                     clicked={() => this.postSelectedHandler(post.id)} />;
             });
@@ -51,6 +51,14 @@ class Blog extends Component {
 
         return (
             <div>
+              <header>
+                <nav>
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/new-post">New Post</a></li>
+                  </ul>
+                </nav>
+              </header>
                 <section className="Posts">
                     {posts}
                 </section>

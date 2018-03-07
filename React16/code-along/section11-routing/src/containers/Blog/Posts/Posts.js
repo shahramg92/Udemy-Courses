@@ -34,7 +34,6 @@ class Posts extends Component {
       this.setState({selectedPostId: id});
   }
 
-
   render () {
     let posts = <p style={{textAlign: 'center'}}>Something went wrong!</p>;
     if (!this.state.error) {
@@ -55,6 +54,6 @@ class Posts extends Component {
     )
   }
 }
-
+}
 
 export default Posts;

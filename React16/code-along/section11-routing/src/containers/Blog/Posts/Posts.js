@@ -6,7 +6,7 @@ import Post from '../../../components/Post/Post';
 import './Posts.css';
 import FullPost from '../FullPost/FullPost';
 
-class Posts extends Component {
+class Post extends Component {
     state = {
         posts: []
     }

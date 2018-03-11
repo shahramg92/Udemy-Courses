@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+impor React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 import Blog from './containers/Blog/Blog';

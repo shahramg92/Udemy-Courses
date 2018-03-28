@@ -9,13 +9,13 @@ class Persons extends Component {
     render () {
         return (
             <div>
-                <AddPerson personAdded={this.personAddedHandler} />
-                {this.state.persons.map(person => (
+                <AddPerson personAdded={this.props.onAddedPerson} />
+                {this.props.prs.map(person => (
                     <Person
                         key={person.id}
                         name={person.name}
                         age={person.age}
-                        clicked={() => this.personDeletedHandler(person.id)}/>
+                        clicked={() => this.props.onRemovedPerson(person.id)}/>
                 ))}
             </div>
         );

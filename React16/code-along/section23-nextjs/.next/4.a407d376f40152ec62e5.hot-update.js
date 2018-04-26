@@ -1,77 +1,5 @@
 webpackHotUpdate(4,{
 
-/***/ "./components/User.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = '/Users/shahram/Repositories/Udemy-Courses/React16/code-along/section23-nextjs/components/User.js';
-
-(function () {
-    var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
-
-    enterModule && enterModule(module);
-})();
-
-
-
-var uer = function uer(props) {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        {
-            __source: {
-                fileName: _jsxFileName,
-                lineNumber: 4
-            }
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'h1',
-            {
-                __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 5
-                }
-            },
-            props.name
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'p',
-            {
-                __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 6
-                }
-            },
-            'Age: ',
-            props.age
-        )
-    );
-};
-
-var _default = user;
-/* unused harmony default export */ var _unused_webpack_default_export = (_default);
-;
-
-(function () {
-    var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
-
-    var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
-
-    if (!reactHotLoader) {
-        return;
-    }
-
-    reactHotLoader.register(uer, 'uer', '/Users/shahram/Repositories/Udemy-Courses/React16/code-along/section23-nextjs/components/User.js');
-    reactHotLoader.register(_default, 'default', '/Users/shahram/Repositories/Udemy-Courses/React16/code-along/section23-nextjs/components/User.js');
-    leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
-
-/***/ }),
-
 /***/ "./pages/auth/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -92,7 +20,7 @@ var _jsxFileName = '/Users/shahram/Repositories/Udemy-Courses/React16/code-along
 
 
 
-var authIndexPage = function authIndexPage() {
+var authIndexPage = function authIndexPage(props) {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         {
@@ -109,9 +37,24 @@ var authIndexPage = function authIndexPage() {
                     lineNumber: 7
                 }
             },
-            'The Auth Index Page'
-        )
+            'The Auth Index Page - ',
+            props.appName
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_User__["a" /* default */], { name: 'Shahram', age: 25, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 8
+            }
+        })
     );
+};
+
+authIndexPage.getInitialProps = function (context) {
+    var promise = new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            resolve({ appName: 'Super App (Auth)' });
+        }, 1000);
+    });
+    return promise;
 };
 
 var _default = authIndexPage;
@@ -156,4 +99,4 @@ var _default = authIndexPage;
 /***/ })
 
 })
-//# sourceMappingURL=4.2c766d4273bef1430a47.hot-update.js.map
+//# sourceMappingURL=4.a407d376f40152ec62e5.hot-update.js.map

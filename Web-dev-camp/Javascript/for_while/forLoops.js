@@ -36,3 +36,11 @@ for(var i = 5; i <= 50; i++){
 		console.log(i);
 	}
 }
+
+function isEven(num) {
+	if(num % 2 === 0) {
+		return true;
+	} else {
+		return false;
+	}
+};

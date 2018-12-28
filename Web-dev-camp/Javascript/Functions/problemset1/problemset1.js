@@ -7,17 +7,14 @@ function isEven(num) {
 }
 
 function factorial(num) {
-    let fact = 0;
-    while (num >= 0) {
-       fact = num * (num - 1)
-       num--
+    let result = 1;
+
+    for (var i = 2; i <= num; i++) {
+        result = result * i;
     }
-    return fact;
+    return result;
 }
 
 function kebabToSnake(str) {
     return str.replace(/-/g, "_");
 }
-
-isEven(4);
-factorial(4);

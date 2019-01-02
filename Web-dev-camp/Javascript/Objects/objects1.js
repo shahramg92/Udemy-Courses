@@ -23,8 +23,8 @@ var movies = [
 
 movies.forEach(function(obj) {
     if (obj.hasWatched === "Yes") {
-        console.log("You have watched: " + obj.title)
+        console.log("You have watched: " + obj.title + " - " + obj.rating + " stars")
     } else {
-        console.log("You have not watched: " + obj.title)
+        console.log("You have not watched: " + obj.title + " - " + obj.rating + " stars")
     }
 });

@@ -7,4 +7,6 @@ document.getElementsByTagName("p")
 
 document.getElementsByName("#first")
 
-document.querySelector("p")
+document.querySelector("#first")
+
+document.querySelector(".special")

@@ -1,0 +1,1 @@
+export const DElETE_POST = 'DELETE_POST';
